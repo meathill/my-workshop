@@ -102,3 +102,11 @@ dist
 
 # TernJS port file
 .tern-port
+
+# slidev
+.DS_Store
+dist
+*.local
+index.html
+.remote-assets
+components.d.ts

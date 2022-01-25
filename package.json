@@ -1,0 +1,13 @@
+{
+  "scripts": {
+    "build": "slidev build",
+    "dev": "slidev nodejs-cli-tool.md",
+    "export": "slidev export"
+  },
+  "dependencies": {
+    "@slidev/cli": "^0.28.2",
+    "@slidev/theme-default": "*",
+    "@slidev/theme-seriph": "*"
+  },
+  "name": "nodejs-cli-tool"
+}
