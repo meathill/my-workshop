@@ -10,6 +10,7 @@ info: |
   Learn more at [Sli.dev](https://sli.dev)
 drawings:
   persist: false
+css: unocss
 ---
 
 # Node.js 命令行工具开发讲习班

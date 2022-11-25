@@ -2,9 +2,9 @@
   "name": "meathill-slides",
   "private": true,
   "scripts": {
-    "build": "slidev build",
+    "build": "./build/index.js",
     "dev": "slidev --open slides/learning-web-performance/index.md",
-    "export": "slidev export"
+    "tmp": "slidev build /Users/meathill/Documents/GitHub/my-workshop/slides/nodejs-cli-tool/index.md -o /Users/meathill/Documents/GitHub/my-workshop/dist/nodejs-cli-tool --base /nodejs-cli-tool/"
   },
   "dependencies": {
     "@slidev/cli": "^0.37.0",
