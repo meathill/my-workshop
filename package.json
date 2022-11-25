@@ -3,11 +3,11 @@
   "private": true,
   "scripts": {
     "build": "slidev build",
-    "dev": "slidev --open",
+    "dev": "slidev --open slides/learning-web-performance/index.md",
     "export": "slidev export"
   },
   "dependencies": {
-    "@slidev/cli": "^0.36.11",
+    "@slidev/cli": "^0.37.0",
     "@slidev/theme-default": "*",
     "@slidev/theme-seriph": "*"
   }
