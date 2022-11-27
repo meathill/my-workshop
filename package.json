@@ -3,11 +3,11 @@
   "private": true,
   "scripts": {
     "build": "./build/index.js",
-    "dev": "slidev --open slides/learning-web-performance/index.md",
-    "tmp": "slidev build"
+    "dev": "slidev --open",
+    "tmp": "slidev learning-web-performance.md"
   },
   "dependencies": {
-    "@slidev/cli": "^0.37.0",
+    "@slidev/cli": "~0.36.11",
     "@slidev/theme-default": "*",
     "@slidev/theme-seriph": "*"
   }
