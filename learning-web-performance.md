@@ -15,7 +15,7 @@ css: unocss
 
 # 从浏览器渲染理解 Web 性能
 
-在浏览器地址栏输入 URL，按下回车后会发生什么
+“在浏览器地址栏输入 URL，按下回车后会发生什么？”
 
 <div class="pt-8">
   <span @click="$slidev.nav.next" class="px-2 py-1 rounded cursor-pointer" hover="bg-white bg-opacity-10">
@@ -47,7 +47,7 @@ image: https://evereditor.com/meathill.jpg
 # 本次分享的目标
 
 - 📖 了解浏览器渲染的基本流程
-- 💡 了解影响网页初期渲染的因素
+- 💡 了解影响网页渲染的因素
 - 📈 从而了解网页性能优化的方式
 
 ---
@@ -209,7 +209,7 @@ layout: statement
 <br />
 
 - 将关键样式放在 `<head>` 中
-- `<head>` 里不要放任何脚本
+- `<head>` 里不要放会阻塞脚本
 - 首屏 HTML 要放在一个闭合标签里
 - 使用骨架屏
 
@@ -350,6 +350,17 @@ layout: statement
 
 ---
 
+### 📈 优化方向：复用缓存
+
+<br />
+
+- 代码分模块时，根据使用场景分组
+- 升级依赖的时候，尽量集中更新某个模块
+- 尽量让生成的代码具备一样的 hash
+- 如果有多个项目，则尽量使用同样的分包
+
+---
+
 # 💪 第八步：渲染完成
 
 <br />
@@ -380,6 +391,29 @@ layout: statement
 - 重负荷的工作交给 web worker
 - 非业务工作，可以延迟执行
 
+---
+
+## 💡 影响性能优化的因素：SSR
+
+<br />
+
+- SSR（Server Side Rendering）服务端渲染，即在服务器上渲染出页面内容，再返回给客户端
+- 通常 SPA 需要等待 JS 执行完毕，再请求数据，再渲染页面
+- SSR 可以让用户更早看到内容，提升用户体验
+
+<br />
+
+### 📈 优化方向
+
+<br />
+
+- 使用 SSR 框架，比如 Nuxt.js，Next.js
+- 使用支持边缘计算和 Serverless 的服务，比如 Vercel
+- 使用预渲染提前渲染页面
+
+<br />
+
+> 打个广告，我的 Nuxt.js 教程正在筹备制作中。
 ---
 
 # 🔋 第九步：为用户回访、站内跳转做准备
