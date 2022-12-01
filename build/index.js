@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-const {readdir, writeFile} = require('fs/promises');
+const {copyFile, readdir, writeFile} = require('fs/promises');
 const {resolve} = require('path');
 const {promisify} = require('util');
 const exec = promisify(require('child_process').exec);
@@ -34,4 +34,5 @@ const exec = promisify(require('child_process').exec);
   // write redirect file
   const redirectFile = redirect.map((to) => `/my-workshop/${to}/*    /my-workshop/${to}/index.html    200`).join('\n');
   await writeFile(resolve(root, 'dist/_redirects'), redirectFile, 'utf8');
+  await copyFile(resolve(root, '404.html'), resolve(root, 'dist/404.html'));
 })();
