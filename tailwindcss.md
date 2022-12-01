@@ -80,7 +80,7 @@ Here is another comment.
 
 我们看下 TailwindCSS 官方的例子：[TailwindCSS Playground](https://play.tailwindcss.com)
 
-![TailwindCSS Playground](img_2.png)
+[TailwindCSS Playground](img_2.png)
 
 ---
 
@@ -89,7 +89,7 @@ Here is another comment.
 <br>
 <br>
 
-![代码截图](img.png)
+[代码截图](img.png)
 
 ---
 
@@ -119,7 +119,7 @@ Here is another comment.
 
 推荐配合 DaisyUI 使用 [DaisyUI](https://daisyui.com).
 
-![DaisyUI 首页](img_1.png)
+[DaisyUI 首页](img_1.png)
 
 ---
 layout: center
