@@ -4,11 +4,13 @@
   "scripts": {
     "build": "./build/index.js",
     "dev": "slidev --open",
-    "tmp": "slidev learning-web-performance.md"
+    "tmp": "slidev parttime-job.md"
   },
   "dependencies": {
-    "@slidev/cli": "~0.36.11",
+    "@slidev/cli": "^0.37.1",
+    "@slidev/theme-bricks": "^0.0.2",
     "@slidev/theme-default": "*",
-    "@slidev/theme-seriph": "*"
+    "@slidev/theme-seriph": "*",
+    "@slidev/theme-shibainu": "^0.0.2"
   }
 }

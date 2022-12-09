@@ -1,14 +1,18 @@
 lockfileVersion: 5.4
 
 specifiers:
-  '@slidev/cli': ~0.36.11
+  '@slidev/cli': ^0.37.1
+  '@slidev/theme-bricks': ^0.0.2
   '@slidev/theme-default': '*'
   '@slidev/theme-seriph': '*'
+  '@slidev/theme-shibainu': ^0.0.2
 
 dependencies:
-  '@slidev/cli': 0.36.11
+  '@slidev/cli': 0.37.1
+  '@slidev/theme-bricks': 0.0.2
   '@slidev/theme-default': 0.21.2
   '@slidev/theme-seriph': 0.21.3
+  '@slidev/theme-shibainu': 0.0.2
 
 packages:
 
@@ -497,8 +501,8 @@ packages:
       picomatch: 2.3.1
     dev: false
 
-  /@slidev/cli/0.36.11:
-    resolution: {integrity: sha512-fIluGssEposmh4VXCT7r4ZQChdnE04XrgjESqLnP9fok6W2hpNgel+hn1YgBaLRYcQ3BVYBPLnrhOqNNhpPlow==}
+  /@slidev/cli/0.37.1:
+    resolution: {integrity: sha512-da6hM/pzwW3fyh4Y89jOyTdoW5aIPYXwrnD53/S3+B2KiNw1tyVHT+kT9XevZdAmmeK3OiK1ERbP3AxO2n7eMw==}
     engines: {node: '>=14.0.0'}
     hasBin: true
     peerDependencies:
@@ -512,9 +516,9 @@ packages:
       '@iconify-json/carbon': 1.1.9
       '@iconify-json/ph': 1.1.2
       '@lillallol/outline-pdf': 4.0.0
-      '@slidev/client': 0.36.11_vite@3.2.3
-      '@slidev/parser': 0.36.11
-      '@slidev/types': 0.36.11
+      '@slidev/client': 0.37.1_vite@3.2.3
+      '@slidev/parser': 0.37.1
+      '@slidev/types': 0.37.1
       '@vitejs/plugin-vue': 3.2.0_vite@3.2.3+vue@3.2.42
       cli-progress: 3.11.2
       codemirror: 5.65.9
@@ -575,13 +579,13 @@ packages:
       - vue-template-es2015-compiler
     dev: false
 
-  /@slidev/client/0.36.11_vite@3.2.3:
-    resolution: {integrity: sha512-UqJw0y2D27KWe2P8kmgFB/qsbU9LUl9omLG1ye/hW/LFluoBroU8SIF55JS5X8SR77K1r7y/Q8X97wTieWrq1g==}
+  /@slidev/client/0.37.1_vite@3.2.3:
+    resolution: {integrity: sha512-UpZZvyTGdJZiHEPgictUZ1o5L/0tHtPq1E95/Hn9TcoXCpOBB5mCkxQqPuOTHUbFSqZpH6awcqt1W2Y3nit3Gg==}
     engines: {node: '>=14.0.0'}
     dependencies:
       '@antfu/utils': 0.6.3
-      '@slidev/parser': 0.36.11
-      '@slidev/types': 0.36.11
+      '@slidev/parser': 0.37.1
+      '@slidev/types': 0.37.1
       '@unocss/reset': 0.46.4
       '@vueuse/core': 9.5.0_vue@3.2.42
       '@vueuse/head': 0.9.8_vue@3.2.42
@@ -614,12 +618,22 @@ packages:
       - vite
     dev: false
 
-  /@slidev/parser/0.36.11:
-    resolution: {integrity: sha512-LZna7hNtGiTm7eHr7m+gvjoLlopCZ2PQ7P7bpTq7dXV4EZlFA8HuUTEA3ubidbYKPW69zEILbEXIZ3sfjEdOSg==}
+  /@slidev/parser/0.37.1:
+    resolution: {integrity: sha512-5C+afymn/9t9BG88bK8j/t4IeHmSi8tedzkBh9xAV2BtF/EoU1niRaKb9Z4byCUY+qz0usA+6G0f8+gO6qHMQQ==}
     engines: {node: '>=14.0.0'}
     dependencies:
-      '@slidev/types': 0.36.11
+      '@slidev/types': 0.37.1
       js-yaml: 4.1.0
+    dev: false
+
+  /@slidev/theme-bricks/0.0.2:
+    resolution: {integrity: sha512-70mc2kdWuo6ZoMJiEdWScs8Ei4bRfoEGDibVQFiHqbdFd2oWmmCyfWOVwc2j6HAiECENXrsmKJfN8Tc0S4kxTQ==}
+    engines: {node: '>=14.0.0', slidev: '>=0.19.2'}
+    dependencies:
+      '@slidev/types': 0.22.7
+      codemirror-theme-vars: 0.1.1
+      prism-theme-vars: 0.2.4
+      theme-vitesse: 0.1.14
     dev: false
 
   /@slidev/theme-default/0.21.2:
@@ -642,13 +656,23 @@ packages:
       theme-vitesse: 0.1.14
     dev: false
 
+  /@slidev/theme-shibainu/0.0.2:
+    resolution: {integrity: sha512-iLGt1UfX9tQMfPQclLMQRNM2DPasWksP/jGr7bKu5NdoPBNHSzYf086A4h46HiNlWOloEnxtAvG1VTdMCKfpIg==}
+    engines: {node: '>=14.0.0'}
+    dependencies:
+      '@slidev/types': 0.22.7
+      codemirror-theme-vars: 0.1.1
+      prism-theme-vars: 0.2.4
+      theme-vitesse: 0.1.14
+    dev: false
+
   /@slidev/types/0.22.7:
     resolution: {integrity: sha512-mCVKQbcGTv6d6n9aHpYNp5U04HF+FMbpY083vqpJ6Folc805BB1Am02eubaW0J6nM+dSOu2dDgPY+kIjs75sAQ==}
     engines: {node: '>=14.0.0'}
     dev: false
 
-  /@slidev/types/0.36.11:
-    resolution: {integrity: sha512-aTSN+FeEMmpaktVBPmgjUFaMGphRqzIQwbxfivVk5Px4f4IeSHezQfNN/+GiBVWh8C7DMzPSjNbLQuResYH3Rg==}
+  /@slidev/types/0.37.1:
+    resolution: {integrity: sha512-JbaFfChFn8GcwR9x89+gIiH/xr6dbjm1lJpjL6PanXJKHOOUYM0HWbnBBWOvq8dTNbG6qvbcFnB7CQKd2e+fig==}
     engines: {node: '>=14.0.0'}
     dev: false
 
