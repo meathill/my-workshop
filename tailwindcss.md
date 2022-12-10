@@ -122,10 +122,5 @@ Here is another comment.
 [DaisyUI 首页](/tailwindcss/img_1.png)
 
 ---
-layout: center
-class: text-center
+src: ./pages/qa.md
 ---
-
-# 欢迎提问
-
-[博客](https://blog.meathill.com) · [Bilibili](https://space.bilibili.com/7409098) · [@meathill](https://weibo.com/meathill)
