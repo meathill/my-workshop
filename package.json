@@ -4,7 +4,7 @@
   "scripts": {
     "build": "./build/index.js",
     "dev": "slidev --open",
-    "tmp": "slidev parttime-job.md"
+    "tmp": "slidev how-to-get-parttime-job.md"
   },
   "dependencies": {
     "@slidev/cli": "^0.37.1",
