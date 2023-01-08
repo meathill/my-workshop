@@ -37,7 +37,7 @@ src: ./pages/author.md
 layout: intro
 ---
 
-# 最近接了一个电商独立建站项目，也不管是不是打自己的脸了，分享经验给大家
+# 最近接了一个电商独立建站项目，也不管是不是打自己的脸了，分享经验给大家。
 
 ---
 layout: section
@@ -82,7 +82,7 @@ layout: quote
 * 跨境电商，可以填补项目经验上的空白
 * Shopify 在独立建站方面有很大优势
     * 提供完整的供销存管理功能
-    * 提供完整 API，开发网站只需要做前端展示部分
+    * 提供完整 Storefront API，开发网站只需要做前端展示部分
     * 前端框架基于 Next.js + React + TailwindCSS，且支持 Vercel Serverless 部署
 * 相信会有很多同学对这方面的教程感兴趣，可以补充收益
 * 有几个朋友处于失业状态，可以帮忙
@@ -103,8 +103,8 @@ layout: fact
 > * 做运动服装品牌，国内生产，主攻国外市场
 > * 除了网站自营，还可以链接到 Amazon、eBay
 > * 希望网站能包含库存管理
-> * 希望网站上有FACEBOOK, INSTAGRAM，PINTEREST等的链接
-> * 以前用过WooCommerce，这次想用 Shopify
+> * 希望网站上有 FACEBOOK，INSTAGRAM，PINTEREST 等的链接
+> * 以前用过 WooCommerce，这次想用 Shopify
 
 ---
 
@@ -216,6 +216,15 @@ layout: quote
 * 通过合理的报价、清晰的报价单，让客户对费用有合理认知，同时也保证未来工作顺利开展
 * 物料准备能让自己显得更加专业，让客户更加放心
 * 积极贡献自己的经验，提升说服力，让客户觉得物超所值
+
+---
+
+# 第三方服务：
+
+* 网站托管：[vercel.com](https://vercel.com)
+* 代码托管：[github.com](https://github.com)
+* Shopify：[shopify.com](https://shopify.com) / [shopify.dev](https://shopify.dev)
+* AirTable: [AirTable](https://airtable.com)
 
 ---
 layout: fact

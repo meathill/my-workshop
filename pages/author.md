@@ -7,5 +7,5 @@ image: https://evereditor.com/meathill.jpg
 
 - 全栈工程师
 - 兴趣使然的分享者
-- 就职于 Code.fun，远程工作
+- 寻找新工作中
 - 现居广州
