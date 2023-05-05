@@ -1,17 +1,22 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 
-const props = defineProps({
-  count: {
-    default: 0,
-  },
-})
+type Props = {
+  count: number;
+}
+const props = withDefaults(defineProps<Props>(), {
+  count: 0,
+});
 
 const counter = ref(props.count)
 </script>
 
 <template>
-  <div flex="~" w="min" border="~ gray-400 opacity-50 rounded-md">
+  <div
+    flex="~"
+    w="min"
+    border="~ gray-400 opacity-50 rounded-md"
+  >
     <button
       border="r gray-400 opacity-50"
       p="2"
@@ -22,7 +27,10 @@ const counter = ref(props.count)
     >
       -
     </button>
-    <span m="auto" p="2">{{ counter }}</span>
+    <span
+      m="auto"
+      p="2"
+    >{{ counter }}</span>
     <button
       border="l gray-400 opacity-50"
       p="2"
@@ -35,3 +43,9 @@ const counter = ref(props.count)
     </button>
   </div>
 </template>
+
+<script lang="ts">
+export default {
+  name: 'DemoCounter'
+}
+</script>

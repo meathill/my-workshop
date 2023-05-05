@@ -4,13 +4,24 @@
   "scripts": {
     "build": "./build/index.js",
     "dev": "slidev --open",
-    "tmp": "slidev css-variables.md"
+    "tmp": "slidev pnpm-workspace-monorepo.md",
+    "lint": "eslint ./ --fix --ext=.js,.cjs,.vue"
   },
   "dependencies": {
-    "@slidev/cli": "^0.38.2",
+    "@slidev/cli": "^0.40.16",
+    "@slidev/theme-apple-basic": "^0.20.0",
     "@slidev/theme-bricks": "^0.0.2",
-    "@slidev/theme-default": "*",
-    "@slidev/theme-seriph": "*",
+    "@slidev/theme-default": "^0.21.2",
+    "@slidev/theme-seriph": "^0.21.3",
     "@slidev/theme-shibainu": "^0.0.2"
+  },
+  "type": "module",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.59.2",
+    "@typescript-eslint/parser": "^5.59.2",
+    "@vue/eslint-config-typescript": "^11.0.3",
+    "eslint": "^8.39.0",
+    "eslint-plugin-vue": "^9.11.0",
+    "vue-eslint-parser": "^9.2.0"
   }
 }

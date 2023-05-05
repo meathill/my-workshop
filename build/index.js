@@ -1,12 +1,13 @@
 #!/usr/bin/env node
 
-const {copyFile, readdir, writeFile} = require('fs/promises');
-const {resolve} = require('path');
-const {promisify} = require('util');
-const exec = promisify(require('child_process').exec);
+import { copyFile, readdir, writeFile } from 'fs/promises';
+import { resolve } from 'path';
+import { promisify } from 'util';
+import child_process from 'child_process';
+const exec = promisify(child_process.exec);
 
 (async () => {
-  const root = resolve(__dirname, '../');
+  const root = process.cwd();
   const files = await readdir(root, {
     withFileTypes: true,
   });
@@ -23,7 +24,7 @@ const exec = promisify(require('child_process').exec);
     const cmd = `slidev build ${file.name} -o dist/${to} --base /my-workshop/${to}/`;
     redirect.push(to);
     console.log('cmd:', cmd);
-    const {stdout, stderr} = await exec(cmd);
+    const { stdout, stderr } = await exec(cmd);
     if (stderr) {
       console.error(stderr);
     }
