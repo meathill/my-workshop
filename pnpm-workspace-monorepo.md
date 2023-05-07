@@ -136,6 +136,15 @@ layout: fact
 layout: section
 ---
 
+- 速度快
+- 磁盘占用少
+- 项目依赖彼此独立、隔离
+- 有各种命令方便操作
+
+---
+layout: section
+---
+
 # 创建 pnpm-workspace.yaml
 
 ---
@@ -157,11 +166,58 @@ layout: section
 # 常见问题解决
 
 ---
+layout: quote
+---
+
+# 基本原则：各司其职
+
+- pnpm 只负责生成依赖目录 `node_modules`
+- 脚手架负责在工作目录内构建开发环境、打包项目
+- lock 文件负责记录依赖版本号
+- `package.json` 负责记录依赖和脚本
+
+---
+layout: section
+---
+❓
+
+需要每个项目文件夹配置单独的入口文件么？
+- 是的，需要。每个项目文件夹都是独立的项目。
+
+❓
+
+怎么安装依赖？
+- 我建议在每个项目文件夹下面执行 `pnpm i`。
+
+❓
+
+怎么引用依赖？
+- 该怎么引用就怎么应用。
+
+---
+layout: section
+---
+❓
+
+怎么打包？怎么启动开发环境？
+- 对每个项目而言，跟以前一样。对整个项目，你可以自己写脚本。
+
+❓
+
+单个项目需要发布到 NPM 么？
+- 不需要。对同一个 monorepo 下的项目，它们就相当于已经发布了。
+
+❓
+
+怎么处理端口？
+- 以前怎么处理，现在还是。workspace 并不会帮你处理端口。
+
+---
 layout: statement
 ---
 
-# 使用 Monorepo 的优势
-# 与工具 npm/pnpm/yarn 无关
+# Monorepo 的好处在于自身
+# pnpm 只是帮我们管理
 
 ---
 src: ./pages/qa.md
