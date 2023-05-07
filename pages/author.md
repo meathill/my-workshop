@@ -1,5 +1,5 @@
 ---
-layout: intro-image-right
+layout: image-right
 image: https://evereditor.com/meathill.jpg
 ---
 
