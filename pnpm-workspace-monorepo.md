@@ -219,5 +219,13 @@ layout: statement
 # pnpm 只是帮我们管理
 
 ---
+layout: section
+---
+
+# 扩展阅读
+
+- [工作空间（Workspace）](https://pnpm.io/zh/workspaces)
+
+---
 src: ./pages/qa.md
 ---
