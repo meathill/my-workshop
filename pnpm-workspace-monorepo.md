@@ -85,7 +85,6 @@ layout: section
 - 便于管理多个互相依赖的项目
 - 便于团队共享知识库
 - 减少项目管理的成本
-- 不同项目之间，可以使用不同的依赖/版本
 
 ---
 layout: section
@@ -104,7 +103,7 @@ layout: quote
 
 浅尝 Monorepo
 ========
-https://github.com/slidevjs/themes/tree/main/packages/theme-apple-basic
+https://blog.meathill.com/tech/some-basic-experience-about-monorepo.html
 
 ---
 layout: section
