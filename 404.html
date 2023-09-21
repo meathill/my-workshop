@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loading</title>
+</head>
+<body>
+    <p>redirecting...</p>
+    <script>
+        const url = window.location.href;
+        if (/\d+$/.test(url)) {
+            location.href = url.replace(/\d+$/, '');
+        }
+    </script>
+</body>
+</html>
